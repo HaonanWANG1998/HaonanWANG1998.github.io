@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Haonan WANG"
+title                    : "Haonan's Homepage"
 title_separator          : "-"
 name                     : &name "Haonan WANG"
 description              : &description "personal description"
@@ -80,9 +80,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Haonan WANG"
+  name             : "Mr. Haonan WANG"
   avatar           : "MyPhotoSmall.png"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "Master of Engineering"
   location         : "Xi'an, China"
   employer         :
  # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
