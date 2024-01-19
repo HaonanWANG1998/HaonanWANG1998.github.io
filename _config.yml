@@ -85,7 +85,7 @@ author:
   bio              : "Your biography for the left-hand sidebar"
   location         : "Xi'an, China"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+ # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=50DhybsAAAAJ&hl=zh-CN&oi=sra"
   email            : 
   researchgate     :  "https://www.researchgate.net/profile/Haonan-Wang-26?ev=hdr_xprf&_sg=TMhM3W8SezBZ0r-eVznc8AhPlKB1isUFgzGyjkUKgY9hbAu-j0Mz7WbFp7U_T_YAZAbWhc2qg79FszBT8voloDwn"
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/HaonanWANG1998"
+  github           : "https://github.com/HaonanWANG1998?tab=repositories"
   google_plus      :
   keybase          :
   instagram        :
