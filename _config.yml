@@ -83,12 +83,12 @@ author:
   name             : "Haonan WANG"
   avatar           : "MyPhoto.png"
   bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  location         : "Xi'an, China"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  googlescholar    : "https://scholar.google.com/citations?user=50DhybsAAAAJ&hl=zh-CN&oi=sra"
+  email            : 
+  researchgate     :  "https://www.researchgate.net/profile/Haonan-Wang-26?ev=hdr_xprf&_sg=TMhM3W8SezBZ0r-eVznc8AhPlKB1isUFgzGyjkUKgY9hbAu-j0Mz7WbFp7U_T_YAZAbWhc2qg79FszBT8voloDwn"
   uri              :
   bitbucket        :
   codepen          :
@@ -96,20 +96,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "https://github.com/HaonanWANG1998"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  LinkedIn         : "https://www.linkedin.com/in/haonanwang1998/"
+  orcid            : "https://orcid.org/my-orcid?orcid=0000-0003-1587-8628"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  #twitter          : "replacethistwitterhandle"
   vine             :
   weibo            :
   xing             :
