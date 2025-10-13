@@ -6,7 +6,16 @@ tags:
   - 示例
   - 教程
   - blog
+read_time: true
+author_profile: true
+share: true
+related: true
+toc: true
+toc_sticky: true
 ---
+
+{% include base_path %}
+{% include toc %}
 
 我的第一篇博客文章
 ======
