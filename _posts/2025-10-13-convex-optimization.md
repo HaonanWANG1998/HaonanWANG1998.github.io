@@ -23,8 +23,8 @@ toc_sticky: true
 ## 什么是凸优化问题（凸优化问题的基本描述）
 ### 标准形式：
 $$\begin{array}{ll}
-\operatorname{minimize} & f_{0}(x) \\
-\text { subject to } & f_{i}(x) \leq 0, \quad i=1, \ldots, m \\
+\text{minimize} & f_{0}(x) \\
+\text{subject to} & f_{i}(x) \leq 0, \quad i=1, \ldots, m \\
 & h_{i}(x)=0, \quad i=1, \ldots, p
 \end{array}$$
 ### 如何判断一个优化问题是不是凸优化问题？三点要求：
@@ -64,8 +64,8 @@ $$\nabla f_{0}(x)=0$$
 ### 只含等式约束
 问题形式：
 $$\begin{array}{ll}
-\operatorname{minimize} & f_{0}(x) \\
-\text { subject to } & A x=b
+\text{minimize} & f_{0}(x) \\
+\text{subject to} & A x=b
 \end{array}$$
 最优性条件：$\nabla f_{0}(x)\in\mathcal{R}(A^{\mathrm{T}})$，或：$\nabla f_{0}(x)$在$\mathcal{N}(A)$的正交补中。
 证明：
@@ -80,8 +80,8 @@ $$\mathcal{N}(A)+A^\mathrm{T}v=0$$
 ### 非负象限中的极小化
 问题形式：
 $$\begin{array}{ll}
-\operatorname{minimize} & f_{0}(x) \\
-\text { subject to } & x \succeq 0
+\text{minimize} & f_{0}(x) \\
+\text{subject to} & x \succeq 0
 \end{array}$$
 最优性条件：
 $$x \succeq 0, \quad \nabla f_{0}(x) \succeq 0, \quad x_{i}\left(\nabla f_{0}(x)\right)_{i}=0, \quad i=1, \ldots, n$$
@@ -95,8 +95,8 @@ $$\sum_{i=1}^{n}(\nabla f_{0}(x))_{i}x_{i}=0$$
 ## 等价凸问题（如何将一般问题转化为凸问题）
 ### 消除等式约束
 $$\begin{array}{ll}
-\operatorname{minimize} & f_{0}\left(F z+x_{0}\right) \\
-\text { subject to } & f_{i}\left(F z+x_{0}\right) \leq 0, \quad i=1, \ldots, m
+\text{minimize} & f_{0}\left(F z+x_{0}\right) \\
+\text{subject to} & f_{i}\left(F z+x_{0}\right) \leq 0, \quad i=1, \ldots, m
 \end{array}$$
 其中$F$的值域为$A$的零空间，$Ax_{0}=b$，则等式约束有：
 $$A(Fz+x_{0})=AFz+Ax_{0}=Ax_{0}=b, \text{for all }z$$
@@ -108,8 +108,8 @@ $$f_{i}(x)+s_{i}=0$$
 ### 上境图问题
 传统问题可转化为：
 $$\begin{array}{ll}
-\operatorname{minimize} & t \\
-\text { subject to } & f_{0}(x)-t \leq 0 \\
+\text{minimize} & t \\
+\text{subject to} & f_{0}(x)-t \leq 0 \\
 & f_{i}(x) \leq 0, \quad i=1, \ldots, m \\
 & a_{i}^{T} x=b_{i}, \quad i=1, \ldots, p
 \end{array}$$
