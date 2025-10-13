@@ -1,8 +1,8 @@
 ---
 layout: single
 title: 'Introduction to Convex Optimization'
-date: 2024-10-13
-permalink: /posts/2024/10/convex-optimization/
+date: 2025-10-13 08:00:00 +0800
+permalink: /posts/2025/10/convex-optimization/
 categories: 
   - Mathematics
   - Optimization
