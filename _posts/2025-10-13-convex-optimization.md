@@ -7,18 +7,7 @@ tags:
   - Mathematics
   - Machine Learning
   - Convex Analysis
-read_time: true
-author_profile: true
-share: true
-related: true
-toc: true
-toc_sticky: true
 ---
-
-{% include base_path %}
-
-凸优化问题
-======
 
 此处为Boyd凸优化教材中对于凸优化问题特征的基本描述
 
@@ -32,7 +21,9 @@ $$\begin{array}{ll}
 \text{subject to} & f_{i}(x) \leq 0, \quad i=1, \ldots, m \\
 & h_{i}(x)=0, \quad i=1, \ldots, p
 \end{array}$$
-### 如何判断一个优化问题是不是凸优化问题？三点要求：
+
+如何判断一个优化问题是不是凸优化问题？三点要求：
+======
 1. **目标函数为凸**
 2. **不等式约束为凸**
 3. **等式约束是仿射的**
@@ -40,14 +31,21 @@ $$\begin{array}{ll}
 $$\mathcal{D}=\bigcap_{i=0}^{m} \operatorname{dom} f_{i} \cap \bigcap_{i=1}^{p} \operatorname{dom} h_{i}$$
 <font color=red>**凸优化问题的本质，即是在一个凸集上极小化一个凸的目标函数。**<font>
 <font color=black>
-### 凸问题与拟凸问题之间的关系
+
+凸问题与拟凸问题之间的关系
+======
+
 而如果目标函数是拟凸的，则优化问题扩展为拟凸优化问题。拟凸优化问题和凸优化问题的关系为：**凸优化问题为最优集最多包含一个点的拟凸优化问题。**由于拟凸函数和凸函数下水平集都是凸集，次优集（或最优集）都是凸的，如果目标函数严格凸，则最优集至多一个点。
+
 局部最优与全局最优
 ======
+
 *凸优化问题的特殊之处；为什么都要研究凸优化问题*
 <font color=red>**对于凸优化问题，局部最优解即全局最优解**<font><font color=black>（对于拟凸问题不满足）
+
 可微函数$f_{0}$的最优性准则
 ======
+
 *凸优化问题的最优解怎么解*
 设凸优化问题的目标函数$f_{0}$可微，对于所有的$x, y \in \operatorname{dom} f_{0}$，有：
 $$f_{0}(y) \geq f_{0}(x)+\nabla f_{0}(x)^{T}(y-x)$$
@@ -57,8 +55,10 @@ $$\nabla f_{0}(x)^{T}(y-x) \geq 0 \text { for all } y \in X$$
 <font color=black>
 其物理意义是：$-\nabla f_{0}(x)$在$x$处定义了可行集的一个支撑超平面。
 以下讨论集中特殊凸优化问题的最优性准则：
+
 无约束问题
 ------
+
 无约束问题，可行域是$\operatorname{dom} f_{0}$的全空间，此时最优解充要条件是：
 $$\nabla f_{0}(x)=0$$
 这是一种之前见过的较传统情况，高中数学求函数极值点的重要准则就是找导数为0的点。根据上式解的数量，有几种可能的情况，下面是一个例子：
@@ -70,8 +70,10 @@ $$\nabla f_{0}(x)=0$$
 >1.$q$不在$P$的列空间中，则无解，此时$f_{0}$无下界。
 >2.如果$P \succ 0$，$f_{0}$严格凸，有唯一最小解$x^{*}=-P^{-1}q$。
 >3.如果$P$奇异而$-q$在其列空间中，则有多个最优解，最优解集合为$X_{\mathrm{opt}}=-P^{\dagger} q+\mathcal{N}(P)$。
+
 只含等式约束
 ------
+
 问题形式：
 $$\begin{array}{ll}
 \text{minimize} & f_{0}(x) \\
@@ -87,8 +89,10 @@ $$\nabla f_{0}(x)^{\mathrm{T}}v \geq0, \text{for all } v \in \mathcal{N}(A) $$
 **如果一个线性函数在子空间中非负，则它在子空间上必恒等于0**。故而$\nabla f_{0}(x)^{\mathrm{T}}v=0$，即$\nabla f_{0}(x)$在$\mathcal{N}(A)$的正交补中。所以**只含等式约束的凸优化问题最优性条件为：$\nabla f_{0}(x)\in\mathcal{R}(A^{\mathrm{T}})$，即：**
 $$\mathcal{N}(A)+A^\mathrm{T}v=0$$
 <font color=red>这是经典的Lagrange乘子最优条件。
+
 非负象限中的极小化
 ------
+
 问题形式：
 $$\begin{array}{ll}
 \text{minimize} & f_{0}(x) \\
@@ -103,11 +107,15 @@ $$x \succeq 0, \quad \nabla f_{0}(x)^{T}(y-x) \geq 0 \text { for all } y \succeq
 $$\sum_{i=1}^{n}(\nabla f_{0}(x))_{i}x_{i}=0$$
 这是$n$个非负项乘积之和，故而每一项乘积都是0，得证。
 **$\quad x_{i}\left(\nabla f_{0}(x)\right)_{i}=0$该项称为互补性，表明$x$和$\nabla f_{0}(x)$的稀疏模式互补，也是KKT条件中的重要内容。**
+
 等价凸问题
 ======
+
 *如何将一般问题转化为凸问题*
+
 消除等式约束
 ------
+
 $$\begin{array}{ll}
 \text{minimize} & f_{0}\left(F z+x_{0}\right) \\
 \text{subject to} & f_{i}\left(F z+x_{0}\right) \leq 0, \quad i=1, \ldots, m
@@ -148,6 +156,6 @@ $$\begin{array}{ll}
 \text { subject to } & \phi_{t}(x) \leq 0 \\
 & f_{i}(x) \leq 0, \quad i=1, \ldots, m \\
 & A x=b
-\end{array}$
+\end{array}$$
 该可行性问题可用来判断最优值与给定$t$之间的关系：如果对于给定$t$，上述有解，则说明$p^{\star}\leq t$，反之同理。基于该功能，我们可以用二分法来框定拟凸问题的最优值以及最优解，算法流程如下：
 ![算法流程图](/images/posts/convex-optimization/algorithm-flow.png)
