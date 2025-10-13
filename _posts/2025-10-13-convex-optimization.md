@@ -15,11 +15,12 @@ tags:
 *基本描述*
 
 ## 标准形式
+
 $$\begin{array}{ll}
 \text{minimize} & f_{0}(x) \\
 \text{subject to} & f_{i}(x) \leq 0, \quad i=1, \ldots, m \\
 & h_{i}(x)=0, \quad i=1, \ldots, p
-\end{array}$$
+\end{array} \tag{1}$$
 
 ### 如何判断一个优化问题是不是凸优化问题？三点要求：
 
@@ -27,7 +28,9 @@ $$\begin{array}{ll}
 2. **不等式约束为凸**
 3. **等式约束是仿射的**
 问题的定义域为：
-$$\mathcal{D}=\bigcap_{i=0}^{m} \text{dom} f_{i} \cap \bigcap_{i=1}^{p} \text{dom} h_{i}$$
+
+$$\mathcal{D}=\bigcap_{i=0}^{m} \text{dom} f_{i} \cap \bigcap_{i=1}^{p} \text{dom} h_{i} \tag{2}$$
+
 **凸优化问题的本质，即是在一个凸集上极小化一个凸的目标函数。**
 
 ### 凸问题与拟凸问题之间的关系
@@ -42,21 +45,31 @@ $$\mathcal{D}=\bigcap_{i=0}^{m} \text{dom} f_{i} \cap \bigcap_{i=1}^{p} \text{do
 
 *凸优化问题的最优解怎么解*
 设凸优化问题的目标函数$f_{0}$可微，对于所有的$x, y \in \text{dom} f_{0}$，有：
-$$f_{0}(y) \geq f_{0}(x)+\nabla f_{0}(x)^{T}(y-x)$$
+
+$$f_{0}(y) \geq f_{0}(x)+\nabla f_{0}(x)^{T}(y-x) \tag{3}$$
+
 以上为凸函数的一阶判定条件，用$X$表示可行集，则$x$是最优解，当且仅当$x \in X$且
-$$\nabla f_{0}(x)^{T}(y-x) \geq 0 \text { for all } y \in X$$
+
+$$\nabla f_{0}(x)^{T}(y-x) \geq 0 \text { for all } y \in X \tag{4}$$
+
 其物理意义是：$-\nabla f_{0}(x)$在$x$处定义了可行集的一个支撑超平面。
 以下讨论集中特殊凸优化问题的最优性准则：
 
 ### 无约束问题
 
 无约束问题，可行域是$\text{dom} f_{0}$的全空间，此时最优解充要条件是：
-$$\nabla f_{0}(x)=0$$
+\begin{equation}
+\nabla f_{0}(x)=0
+\end{equation}
 这是一种之前见过的较传统情况，高中数学求函数极值点的重要准则就是找导数为0的点。根据上式解的数量，有几种可能的情况，下面是一个例子：
 >**无约束二次规划**：最小化目标函数
->$$f_{0}(x)=(1 / 2) x^{T} P x+q^{T} x+r$$
+>\begin{equation}
+f_{0}(x)=(1 / 2) x^{T} P x+q^{T} x+r
+\end{equation}
 >其中$P$为半正定阵，则有最优解条件可得：
->$$\nabla f_{0}(x)=P x+q=0$$
+>\begin{equation}
+\nabla f_{0}(x)=P x+q=0
+\end{equation}
 >最优解为方程组$Px=-q$的解，则有如下几种情况：
 >1.$q$不在$P$的列空间中，则无解，此时$f_{0}$无下界。
 >2.如果$P \succ 0$，$f_{0}$严格凸，有唯一最小解$x^{*}=-P^{-1}q$。
@@ -65,35 +78,49 @@ $$\nabla f_{0}(x)=0$$
 ### 只含等式约束
 
 问题形式：
+
 $$\begin{array}{ll}
 \text{minimize} & f_{0}(x) \\
 \text{subject to} & A x=b
-\end{array}$$
+\end{array} \tag{8}$$
+
 最优性条件：$\nabla f_{0}(x)\in\mathcal{R}(A^{\mathrm{T}})$，或：$\nabla f_{0}(x)$在$\mathcal{N}(A)$的正交补中。
 证明：
 
 可行集是一个仿射集，最优性条件为：对任意$Ay=b$的$y$
-$$\nabla f_{0}(x)^{\mathrm{T}}(y-x) \geq0$$
+
+$$\nabla f_{0}(x)^{\mathrm{T}}(y-x) \geq0 \tag{9}$$
+
 每一个$y$都有$y=x+v$的形式，其中$v \in \mathcal{N}(A)$，最优性条件为：
-$$\nabla f_{0}(x)^{\mathrm{T}}v \geq0, \text{for all } v \in \mathcal{N}(A) $$
-**如果一个线性函数在子空间中非负，则它在子空间上必恒等于0**。故而$\nabla f_{0}(x)^{\mathrm{T}}v=0$，即$\nabla f_{0}(x)$在$\mathcal{N}(A)$的正交补中。所以**只含等式约束的凸优化问题最优性条件为：$\nabla f_{0}(x)\in\mathcal{R}(A^{\mathrm{T}})$，即：**
-$$\mathcal{N}(A)+A^\mathrm{T}v=0$$
+
+$$\nabla f_{0}(x)^{\mathrm{T}}v \geq0, \text{for all } v \in \mathcal{N}(A) \tag{10}$$
+
+**如果一个线性函数在子空间中非负，则它在子空间上必恒等于0**。故而$\nabla f_{0}(x)^{\mathrm{T}}v=0$，即$\nabla f_{0}(x)$在$\mathcal{N}(A)$的正交补中。所以**只含等式约束的凸优化问题最优性条件为：$\nabla f_{0}(x)\in\mathcal{R}(A^{\mathrm{T}})$，即：
+
+$$\mathcal{N}(A)+A^\mathrm{T}v=0 \tag{11}$$
+
 这是经典的Lagrange乘子最优条件。
 
 ### 非负象限中的极小化
 
 问题形式：
+
 $$\begin{array}{ll}
 \text{minimize} & f_{0}(x) \\
 \text{subject to} & x \succeq 0
-\end{array}$$
+\end{array} \tag{12}$$
+
 最优性条件：
-$$x \succeq 0, \quad \nabla f_{0}(x) \succeq 0, \quad x_{i}\left(\nabla f_{0}(x)\right)_{i}=0, \quad i=1, \ldots, n$$
+
+$$x \succeq 0, \quad \nabla f_{0}(x) \succeq 0, \quad x_{i}\left(\nabla f_{0}(x)\right)_{i}=0, \quad i=1, \ldots, n \tag{13}$$
+
 证明：
 由可微$f_{0}(x)$的最优性条件可知：
-$$x \succeq 0, \quad \nabla f_{0}(x)^{T}(y-x) \geq 0 \text { for all } y \succeq 0$$
+
+$$x \succeq 0, \quad \nabla f_{0}(x)^{T}(y-x) \geq 0 \text { for all } y \succeq 0 \tag{14}$$
+
 其中$\nabla f_{0}(x)^{T} y$是$y$的线性函数且在$y \succeq 0$上无下界。于是最优条件简化为$-\nabla f_{0}(x)^{T} x\geq0$，而$x \succeq 0$且$\nabla f_{0}(x)\succeq 0$，所以有$\nabla f_{0}(x)=0$，即：
-$$\sum_{i=1}^{n}(\nabla f_{0}(x))_{i}x_{i}=0$$
+$$\sum_{i=1}^{n}(\nabla f_{0}(x))_{i}x_{i}=0 \tag{15}$$
 这是$n$个非负项乘积之和，故而每一项乘积都是0，得证。
 **$\quad x_{i}\left(\nabla f_{0}(x)\right)_{i}=0$该项称为互补性，表明$x$和$\nabla f_{0}(x)$的稀疏模式互补，也是KKT条件中的重要内容。**
 
@@ -106,26 +133,31 @@ $$\sum_{i=1}^{n}(\nabla f_{0}(x))_{i}x_{i}=0$$
 $$\begin{array}{ll}
 \text{minimize} & f_{0}\left(F z+x_{0}\right) \\
 \text{subject to} & f_{i}\left(F z+x_{0}\right) \leq 0, \quad i=1, \ldots, m
-\end{array}$$
+\end{array} \tag{16}$$
+
 其中$F$的值域为$A$的零空间，$Ax_{0}=b$，则等式约束有：
-$$A(Fz+x_{0})=AFz+Ax_{0}=Ax_{0}=b, \text{for all }z$$
+
+$$A(Fz+x_{0})=AFz+Ax_{0}=Ax_{0}=b, \text{for all }z \tag{17}$$
+
 ### 引入等式约束
 若问题中有这种形式：$f_{i}\left(A_{i} x+b_{i}\right)$，则用$y_{i}=A_{i}x+b_{i}$代替。
 
 ### 松弛变量
 
 将不等式约束$f_{i}(x)\leq0$引入松弛变量$s_{i}$，变不等式约束为等式约束：
-$$f_{i}(x)+s_{i}=0$$
+$$f_{i}(x)+s_{i}=0 \tag{18}$$
 
 ### 上境图问题
 
 传统问题可转化为：
+
 $$\begin{array}{ll}
 \text{minimize} & t \\
 \text{subject to} & f_{0}(x)-t \leq 0 \\
 & f_{i}(x) \leq 0, \quad i=1, \ldots, m \\
 & a_{i}^{T} x=b_{i}, \quad i=1, \ldots, p
-\end{array}$$
+\end{array} \tag{19}$$
+
 **因为任何凸优化问题都可以转化为具有线性目标函数的问题，所以称线性目标函数对凸优化问题是普适的。**
 极小化部分变量
 
@@ -148,10 +180,12 @@ $$x \in X, \quad \nabla f_{0}(x)^{T}(y-x)>0 \text { for all } y \in X \backslash
 $$f_{0}(x) \leq t \Longleftrightarrow \phi_{t}(x) \leq 0$$
 的一族凸函数，且对每一个$x$，$\phi_{t}(x)$关于$t$非增（*由于用$\phi_{t}(x)$的下水平集表示原拟凸函数的下水平集，原函数当$t$变大时，在该原集合中的$x$仍然在新的下水平集中，这一限定既是为了满足该特点*）。
 用$p^{\star}$表示拟凸优化问题的最优值，可以构造如下凸的可行性问题：
+
 $$\begin{array}{ll}
 \text { find } & x \\
 \text { subject to } & \phi_{t}(x) \leq 0 \\
 & f_{i}(x) \leq 0, \quad i=1, \ldots, m \\
 & A x=b
 \end{array}$$
+
 该可行性问题可用来判断最优值与给定$t$之间的关系：如果对于给定$t$，上述有解，则说明$p^{\star}\leq t$，反之同理。
