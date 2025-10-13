@@ -10,21 +10,20 @@ tags:
   - Mathematics
   - Machine Learning
   - Convex Analysis
-excerpt: 'This post introduces the fundamental concepts of convex optimization based on Boyd\'s textbook, including standard forms, optimality conditions, and the relationship between local and global optima.'
+excerpt: 'This post introduces the fundamental concepts of convex optimization based on Boyd textbook, including standard forms, optimality conditions, and the relationship between local and global optima.'
 ---
 
-此处为Boyd凸优化教材中对于凸优化问题特征的基本描述
+This post introduces the fundamental concepts of convex optimization based on Boyd's textbook.
 
-# 凸优化问题
-*基本描述*
+# Convex Optimization Problems
 
-## 标准形式
+## Standard Form
 
-$$\begin{array}{ll}
-\text{minimize} & f_{0}(x) \\
-\text{subject to} & f_{i}(x) \leq 0, \quad i=1, \ldots, m \\
-& h_{i}(x)=0, \quad i=1, \ldots, p
-\end{array}$$
+A convex optimization problem has the following standard form:
+
+- minimize f_0(x)
+- subject to f_i(x) ≤ 0, i=1,...,m  
+- and h_i(x) = 0, i=1,...,p
 
 ### 如何判断一个优化问题是不是凸优化问题？三点要求：
 
