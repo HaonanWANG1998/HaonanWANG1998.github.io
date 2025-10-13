@@ -9,7 +9,6 @@ tags:
   - Mathematics
   - Machine Learning
   - Convex Analysis
-
 excerpt: '此处为Boyd凸优化教材中对于凸优化问题特征的基本描述。'
 ---
 
