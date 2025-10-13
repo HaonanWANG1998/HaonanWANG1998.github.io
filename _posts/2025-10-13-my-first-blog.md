@@ -1,5 +1,5 @@
 ---
-title: '我的第一篇博客文章'
+title: '凸优化问题'
 date: 2025-10-13
 permalink: /posts/2025/10/my-first-blog/
 tags:
@@ -17,7 +17,6 @@ toc_sticky: true
 {% include base_path %}
 {% include toc %}
 
-@[TOC](凸优化问题)
 # 凸优化问题
 此处为Boyd凸优化教材中对于凸优化问题特征的基本描述
 ## 什么是凸优化问题（凸优化问题的基本描述）
