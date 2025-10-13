@@ -190,3 +190,5 @@ $$\begin{array}{ll}
 \end{array}$$
 
 该可行性问题可用来判断最优值与给定$t$之间的关系：如果对于给定$t$，上述有解，则说明$p^{\star}\leq t$，反之同理。
+
+{% include custom-toc.html %}

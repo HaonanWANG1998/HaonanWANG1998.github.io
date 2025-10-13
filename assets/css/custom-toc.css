@@ -1,0 +1,163 @@
+.toc-custom {
+    position: fixed;
+    right: 20px;
+    top: 80px;
+    width: 280px;
+    background-color: #ffffff;
+    border-left: 1px solid #e8e8e8;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.toc-custom-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 8px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toc-custom-title:hover {
+    color: #0366d6;
+}
+
+.toc-toggle {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.toc-toggle::before {
+    content: "▾";
+    font-size: 16px;
+    color: #666;
+}
+
+.toc-custom.collapsed .toc-toggle::before {
+    content: "▸";
+}
+
+.toc-custom.collapsed .toc-custom ul {
+    display: none;
+}
+
+.toc-custom.collapsed {
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.toc-custom.collapsed:hover {
+    width: 280px;
+}
+
+.toc-custom.collapsed:hover .toc-custom ul {
+    display: block;
+}
+
+.toc-custom ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.toc-custom li {
+    margin: 3px 0;
+    line-height: 1.4;
+}
+
+/* 标题层级样式 */
+.toc-h1 {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.toc-h2 {
+    padding-left: 1.2em;
+    font-weight: 500;
+    color: #444;
+}
+
+.toc-h3 {
+    padding-left: 2.4em;
+    color: #666;
+}
+
+.toc-h4 {
+    padding-left: 3.6em;
+    color: #888;
+}
+
+/* 添加标题层级指示符 */
+.toc-h2::before {
+    content: "▸";
+    margin-right: 5px;
+    color: #666;
+}
+
+.toc-h3::before {
+    content: "•";
+    margin-right: 5px;
+    font-size: 0.8em;
+    color: #999;
+}
+
+.toc-h4::before {
+    content: "◦";
+    margin-right: 5px;
+    font-size: 0.8em;
+    color: #bbb;
+}
+
+.toc-custom a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 3px 0;
+    transition: all 0.2s ease;
+}
+
+.toc-custom a:hover {
+    color: #0366d6;
+    transform: translateX(3px);
+}
+
+.toc-custom a.active {
+    color: #0366d6;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+    .toc-custom {
+        display: none;
+    }
+}
+
+/* 滚动条美化 */
+.toc-custom::-webkit-scrollbar {
+    width: 6px;
+}
+
+.toc-custom::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.toc-custom::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+.toc-custom::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
