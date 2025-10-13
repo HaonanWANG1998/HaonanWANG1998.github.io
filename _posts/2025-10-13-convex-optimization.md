@@ -27,9 +27,8 @@ $$\begin{array}{ll}
 2. **不等式约束为凸**
 3. **等式约束是仿射的**
 问题的定义域为：
-$$\mathcal{D}=\bigcap_{i=0}^{m} \operatorname{dom} f_{i} \cap \bigcap_{i=1}^{p} \operatorname{dom} h_{i}$$
-<font color=red>**凸优化问题的本质，即是在一个凸集上极小化一个凸的目标函数。**<font>
-<font color=black>
+$$\mathcal{D}=\bigcap_{i=0}^{m} \text{dom} f_{i} \cap \bigcap_{i=1}^{p} \text{dom} h_{i}$$
+**凸优化问题的本质，即是在一个凸集上极小化一个凸的目标函数。**
 
 ### 凸问题与拟凸问题之间的关系
 
@@ -37,24 +36,21 @@ $$\mathcal{D}=\bigcap_{i=0}^{m} \operatorname{dom} f_{i} \cap \bigcap_{i=1}^{p} 
 
 # 局部最优与全局最优
 
-*凸优化问题的特殊之处；为什么都要研究凸优化问题*
-<font color=red>**对于凸优化问题，局部最优解即全局最优解**<font><font color=black>（对于拟凸问题不满足）
+凸优化问题的特殊之处（为什么都要研究凸优化问题）：对于凸优化问题，局部最优解即全局最优解（对于拟凸问题不满足）
 
 ### 可微函数$f_{0}$的最优性准则
 
 *凸优化问题的最优解怎么解*
-设凸优化问题的目标函数$f_{0}$可微，对于所有的$x, y \in \operatorname{dom} f_{0}$，有：
+设凸优化问题的目标函数$f_{0}$可微，对于所有的$x, y \in \text{dom} f_{0}$，有：
 $$f_{0}(y) \geq f_{0}(x)+\nabla f_{0}(x)^{T}(y-x)$$
 以上为凸函数的一阶判定条件，用$X$表示可行集，则$x$是最优解，当且仅当$x \in X$且
-<font color=red>
 $$\nabla f_{0}(x)^{T}(y-x) \geq 0 \text { for all } y \in X$$
-<font color=black>
 其物理意义是：$-\nabla f_{0}(x)$在$x$处定义了可行集的一个支撑超平面。
 以下讨论集中特殊凸优化问题的最优性准则：
 
 ### 无约束问题
 
-无约束问题，可行域是$\operatorname{dom} f_{0}$的全空间，此时最优解充要条件是：
+无约束问题，可行域是$\text{dom} f_{0}$的全空间，此时最优解充要条件是：
 $$\nabla f_{0}(x)=0$$
 这是一种之前见过的较传统情况，高中数学求函数极值点的重要准则就是找导数为0的点。根据上式解的数量，有几种可能的情况，下面是一个例子：
 >**无约束二次规划**：最小化目标函数
@@ -82,7 +78,7 @@ $$\nabla f_{0}(x)^{\mathrm{T}}(y-x) \geq0$$
 $$\nabla f_{0}(x)^{\mathrm{T}}v \geq0, \text{for all } v \in \mathcal{N}(A) $$
 **如果一个线性函数在子空间中非负，则它在子空间上必恒等于0**。故而$\nabla f_{0}(x)^{\mathrm{T}}v=0$，即$\nabla f_{0}(x)$在$\mathcal{N}(A)$的正交补中。所以**只含等式约束的凸优化问题最优性条件为：$\nabla f_{0}(x)\in\mathcal{R}(A^{\mathrm{T}})$，即：**
 $$\mathcal{N}(A)+A^\mathrm{T}v=0$$
-<font color=red>这是经典的Lagrange乘子最优条件。
+这是经典的Lagrange乘子最优条件。
 
 ### 非负象限中的极小化
 
@@ -158,5 +154,4 @@ $$\begin{array}{ll}
 & f_{i}(x) \leq 0, \quad i=1, \ldots, m \\
 & A x=b
 \end{array}$$
-该可行性问题可用来判断最优值与给定$t$之间的关系：如果对于给定$t$，上述有解，则说明$p^{\star}\leq t$，反之同理。基于该功能，我们可以用二分法来框定拟凸问题的最优值以及最优解，算法流程如下：
-![算法流程图](/images/posts/convex-optimization/algorithm-flow.png)
+该可行性问题可用来判断最优值与给定$t$之间的关系：如果对于给定$t$，上述有解，则说明$p^{\star}\leq t$，反之同理。
