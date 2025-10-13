@@ -2,7 +2,6 @@
 layout: single
 title: 'Introduction to Convex Optimization'
 date: 2025-10-13 08:00:00 +0800
-permalink: /posts/2025/10/convex-optimization/
 categories: 
   - Mathematics
   - Optimization
@@ -12,11 +11,6 @@ tags:
   - Machine Learning
   - Convex Analysis
 excerpt: 'This post introduces the fundamental concepts of convex optimization based on Boyd\'s textbook, including standard forms, optimality conditions, and the relationship between local and global optima.'
-author_profile: true
-read_time: true
-comments: true
-share: true
-related: true
 ---
 
 此处为Boyd凸优化教材中对于凸优化问题特征的基本描述
