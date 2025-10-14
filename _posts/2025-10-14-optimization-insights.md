@@ -1,7 +1,7 @@
 ---
 layout: single
-title: 'test'
-date: 2025-10-13 12:00:00 +0800
+title: 'Optimization Insight'
+date: 2025-10-14 12:00:00 +0800
 categories: 
   - Optimization
 tags:
@@ -9,8 +9,6 @@ tags:
   - Mathematics
   - Machine Learning
   - Convex Analysis
-excerpt: 'test'
+excerpt: 'A description of some useful optimization insights.'
 ---
 
-
-test
