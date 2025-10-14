@@ -1,0 +1,237 @@
+/* 
+ * 博客文章排版优化
+ * Blog Post Typography Enhancements
+ */
+
+/* 基础排版改进 */
+body {
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+
+/* 页面内容区域优化 */
+.page__content {
+  
+  /* 段落间距和对齐 */
+  p {
+    margin-bottom: 1.6em;
+    text-align: justify;
+    word-break: break-word;
+    line-height: 1.8;
+  }
+  
+  /* 标题样式增强 */
+  h1, h2, h3, h4, h5, h6 {
+    margin: 2.5em 0 1em 0;
+    line-height: 1.3;
+    font-weight: 600;
+    
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  
+  h1 {
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 0.3em;
+  }
+  
+  h2 {
+    color: #34495e;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 0.25em;
+  }
+  
+  h3 {
+    color: #e67e22;
+  }
+  
+  h4 {
+    color: #9b59b6;
+  }
+  
+  /* 列表样式优化 */
+  ul, ol {
+    margin: 1.5em 0;
+    
+    li {
+      margin-bottom: 0.8em;
+      line-height: 1.7;
+    }
+  }
+  
+  /* 代码样式改进 */
+  code {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 0.2em 0.4em;
+    font-size: 0.9em;
+    color: #e83e8c;
+  }
+  
+  pre {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 1.2em;
+    margin: 2em 0;
+    overflow-x: auto;
+    
+    code {
+      background: none;
+      border: none;
+      padding: 0;
+      color: inherit;
+      font-size: 0.95em;
+      line-height: 1.6;
+    }
+  }
+  
+  /* 引用块美化 */
+  blockquote {
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    margin: 2em 0;
+    padding: 1em 1.5em;
+    font-style: italic;
+    border-radius: 0 6px 6px 0;
+    
+    p {
+      color: #555;
+      margin-bottom: 0.8em;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+  /* 表格样式 */
+  table {
+    border-collapse: collapse;
+    margin: 2em 0;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    overflow: hidden;
+    
+    th, td {
+      border: 1px solid #dee2e6;
+      padding: 0.8em 1em;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #343a40;
+      color: white;
+      font-weight: 600;
+    }
+    
+    tbody tr:nth-child(even) {
+      background-color: #f8f9fa;
+    }
+    
+    tbody tr:hover {
+      background-color: #e9ecef;
+    }
+  }
+  
+  /* 链接样式 */
+  a {
+    color: #3498db;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      color: #2980b9;
+      border-bottom-color: #3498db;
+      text-decoration: none;
+    }
+  }
+  
+  /* 图片优化 */
+  img {
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 1.5em 0;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      transform: translateY(-2px);
+    }
+  }
+  
+  /* 分隔线 */
+  hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #3498db, #e74c3c, #f39c12);
+    margin: 3em 0;
+    border-radius: 1px;
+  }
+}
+
+/* 文章标题优化 */
+.page__title {
+  font-size: 2.5em !important;
+  font-weight: 700 !important;
+  color: #2c3e50 !important;
+  text-align: center;
+  margin-bottom: 0.5em !important;
+  line-height: 1.2 !important;
+}
+
+/* 文章元信息 */
+.page__meta {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 0.9em;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+/* 代码高亮优化 */
+.highlight {
+  border-radius: 6px;
+  
+  .lineno {
+    color: #999;
+    border-right: 1px solid #e9ecef;
+    padding-right: 0.8em;
+    margin-right: 0.8em;
+  }
+}
+
+/* 响应式调整 */
+@include breakpoint($medium) {
+  .page__content {
+    font-size: 1.1em;
+  }
+}
+
+@include breakpoint($small) {
+  .page__content {
+    font-size: 1em;
+    
+    h1 {
+      font-size: 1.8em;
+    }
+    
+    h2 {
+      font-size: 1.5em;
+    }
+    
+    h3 {
+      font-size: 1.3em;
+    }
+  }
+  
+  .page__title {
+    font-size: 2em !important;
+  }
+}
