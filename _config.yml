@@ -154,7 +154,7 @@ social:
 analytics:
   provider               :  "google-analytics-4" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
-    tracking_id          :  # Paste your GA4 Measurement ID here, e.g. "G-XXXXXXXXXX"
+    tracking_id          :  "G-0F15V7JKB7"
 
 # Reading Files
 include:
