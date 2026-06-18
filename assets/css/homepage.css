@@ -1,8 +1,31 @@
 /* =========================================================
-   Haonan Wang — homepage styles (scliubit-inspired)
-   Scoped under .hw-home so it overrides _blog-custom.scss
-   only on the landing page and never touches blog posts.
+   Haonan Wang — site styles
+   Global typography (Optima-led, matches ee.cityu.edu.hk/~alexyu)
+   plus the clean .hw-home content style reused across pages.
    ========================================================= */
+
+/* ---- Global font (site-wide) ---- */
+:root {
+  --hw-font: Optima, "Optima Nova", "Helvetica Neue", Candara, Calibri, "Segoe UI", Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Droid Sans", Arial, sans-serif;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.archive__item-title,
+.author__name,
+.author__bio,
+.greedy-nav,
+.masthead,
+button, input, select, textarea {
+  font-family: var(--hw-font);
+}
+
+.page__title {
+  text-align: left !important;
+  font-size: 1.9em !important;
+  border-bottom: none !important;
+}
 
 .hw-home {
   --hw-accent: #2563eb;
@@ -299,4 +322,37 @@
   .hw-home .hw-news .date {
     min-width: 0;
   }
+}
+
+/* ---- Lead note on sub-pages ---- */
+.hw-home .hw-note {
+  color: var(--hw-muted);
+  font-size: 0.95em;
+  margin-bottom: 1.3em;
+}
+
+/* ---- Publications page: citation cards ---- */
+.hw-home .hw-pub .cite {
+  color: #374151;
+  line-height: 1.65;
+}
+
+/* ---- Tame theme archive item titles when reused inside .hw-home
+        (Research/Portfolio and CV publication/teaching loops) ---- */
+.hw-home .archive__item-title {
+  display: block;
+  margin: 0.2em 0;
+  padding-bottom: 0;
+  font-size: 1.05em;
+  font-weight: 600;
+  border-bottom: none;
+}
+.hw-home .archive__item-title::before {
+  display: none;
+}
+.hw-home .archive__item {
+  margin-bottom: 0.4em;
+}
+.hw-home .archive__item-excerpt {
+  color: #374151;
 }

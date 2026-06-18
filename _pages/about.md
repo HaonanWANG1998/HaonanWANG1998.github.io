@@ -51,54 +51,6 @@ Prof. Ang Li. My current interests center on **reconfigurable MIMO** and
   <li><strong>B.Eng. in Information Engineering</strong><span class="year">2016 – 2020</span><br><span class="meta">Xi'an Jiaotong University&nbsp;·&nbsp;Advisor: Dr. Li Sun</span></li>
 </ul>
 
-## Selected Publications
-
-<div class="hw-pub">
-  <div class="title">Efficient Discrete Position Design for Movable Antenna Systems: Low-Complexity and Robustness</div>
-  <div class="authors"><span class="me">H. Wang</span>, X. Yu, R. Wang, A. Li, and Y.-J. A. Zhang</div>
-  <div class="venue">IEEE Journal on Selected Areas in Communications (Under Review), 2025</div>
-  <div class="hw-links"><span class="hw-status">Under Review</span></div>
-</div>
-
-<div class="hw-pub">
-  <div class="title">Exploiting Submodularity for Efficient Discrete Movable Antenna Placement</div>
-  <div class="authors"><span class="me">H. Wang</span>, X. Yu, R. Wang, A. Li, and Y.-J. A. Zhang</div>
-  <div class="venue">Proc. IEEE International Conference on Communications (ICC), Glasgow, UK, 2026</div>
-  <div class="hw-links"><span class="hw-status">Accepted</span></div>
-</div>
-
-<div class="hw-pub">
-  <div class="title">Joint Symbol-Level Precoding and Radiation Pattern Design for Downlink Reconfigurable Antenna Systems</div>
-  <div class="authors"><span class="me">H. Wang</span>, L. Zhang, M. Liang, A. Li, F. Liu, Y. Li, and L. Song</div>
-  <div class="venue">IEEE Transactions on Wireless Communications, 2024</div>
-  <div class="hw-links">
-    <a href="https://doi.org/10.1109/TWC.2024.3368704" target="_blank" rel="noopener">Paper</a>
-    <img src="https://api.juleskreuer.eu/citation-badge.php?doi=10.1109/TWC.2024.3368704" alt="citation badge" loading="lazy">
-  </div>
-</div>
-
-<div class="hw-pub">
-  <div class="title">Low-Complexity Interference Exploitation MISO Precoding Under Per-Antenna Power Constraint</div>
-  <div class="authors">Y. Wen, <span class="me">H. Wang</span>, A. Li, X. Liao, and C. Masouros</div>
-  <div class="venue">IEEE Transactions on Wireless Communications, 2024</div>
-  <div class="hw-links">
-    <a href="https://doi.org/10.1109/TWC.2024.3367410" target="_blank" rel="noopener">Paper</a>
-    <img src="https://api.juleskreuer.eu/citation-badge.php?doi=10.1109/TWC.2024.3367410" alt="citation badge" loading="lazy">
-  </div>
-</div>
-
-<div class="hw-pub">
-  <div class="title">Achievable Rate Maximization Pattern Design for Reconfigurable MIMO Antenna Array</div>
-  <div class="authors"><span class="me">H. Wang</span>, A. Li, Y.-F. Liu, Q. Qin, L. Song, and Y. Li</div>
-  <div class="venue">IEEE Transactions on Wireless Communications, 2023</div>
-  <div class="hw-links">
-    <a href="https://doi.org/10.1109/TWC.2023.3238069" target="_blank" rel="noopener">Paper</a>
-    <img src="https://api.juleskreuer.eu/citation-badge.php?doi=10.1109/TWC.2023.3238069" alt="citation badge" loading="lazy">
-  </div>
-</div>
-
-<p class="hw-more"><a href="/publications/">See the full publication list →</a></p>
-
 ## Professional Service
 
 ### Academic Service

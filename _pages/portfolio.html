@@ -7,9 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-
-{% assign sortedPortfolio = site.portfolio | sort: "date" | reverse %}
-{% for post in sortedPortfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="hw-home">
+{% assign sortedPortfolio = site.portfolio | sort: "date" | reverse %}{% for post in sortedPortfolio %}{% include archive-single.html %}{% endfor %}
+</div>
 
