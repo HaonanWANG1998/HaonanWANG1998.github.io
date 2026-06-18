@@ -25,8 +25,9 @@ author:
   # Biographic information
   avatar           : "profile.jpg"
   name             : "Haonan Wang"
+  name_cn          : "王浩楠"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. Candidate, City University of Hong Kong<span class='author__ieee'>Graduate Student Member of the IEEE</span>"
+  bio              : "Ph.D. Candidate<span class='author__ieee'>Graduate Student Member of the IEEE</span>"
   location         : "Hong Kong SAR, China"
   employer         : "City University of Hong Kong"
   uri              : "https://haonanwang1998.github.io"
@@ -83,10 +84,13 @@ author:
 publication_category:
   manuscripts:
     title: 'Journal Articles'
+    prefix: 'J'
   books:
     title: 'Book Chapters'
+    prefix: 'B'
   conferences:
     title: 'Conference Papers'
+    prefix: 'C'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews

@@ -9,7 +9,7 @@ redirect_from:
 
 <div class="hw-home" markdown="1">
 
-I am **Haonan Wang** (王浩楠), a Ph.D. candidate in Electrical Engineering at the
+I am **Haonan Wang**, a Ph.D. candidate in Electrical Engineering at the
 [City University of Hong Kong](https://www.cityu.edu.hk/), advised by
 [Prof. Xianghao Yu](https://www.ee.cityu.edu.hk/~xianghyu/). My research lies at
 the intersection of **wireless communications**, **signal processing**, and

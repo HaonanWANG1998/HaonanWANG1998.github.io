@@ -33,6 +33,15 @@ button, input, select, textarea {
   line-height: 1.45;
 }
 
+/* Chinese name beside the English name in the sidebar */
+.author__name-cn {
+  font-size: 0.82em;
+  font-weight: 400;
+  color: #6b7280;
+  margin-left: 0.3em;
+  letter-spacing: 0.02em;
+}
+
 .page__title {
   text-align: left !important;
   font-size: 1.9em !important;
@@ -51,7 +60,8 @@ button, input, select, textarea {
 
 /* ---- Reset garish blog-custom styles inside the homepage ---- */
 .hw-home p {
-  text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
   margin-bottom: 1em;
   line-height: 1.75;
 }
@@ -347,6 +357,16 @@ button, input, select, textarea {
 .hw-home .hw-pub .cite {
   color: #374151;
   line-height: 1.65;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Citation index label [J1] / [C1] / [B1] */
+.hw-home .hw-pub .pub-id {
+  font-weight: 700;
+  color: var(--hw-accent);
+  margin-right: 0.35em;
+  font-variant-numeric: tabular-nums;
 }
 
 /* ---- Tame theme archive item titles when reused inside .hw-home
