@@ -13,12 +13,24 @@ body,
 h1, h2, h3, h4, h5, h6,
 .page__title,
 .archive__item-title,
+.sidebar,
 .author__name,
 .author__bio,
+.author__urls,
+.author__urls a,
 .greedy-nav,
 .masthead,
 button, input, select, textarea {
-  font-family: var(--hw-font);
+  font-family: var(--hw-font) !important;
+}
+
+/* Sidebar IEEE membership line under the bio */
+.author__ieee {
+  display: block;
+  margin-top: 0.35em;
+  font-size: 0.82em;
+  color: #6b7280;
+  line-height: 1.45;
 }
 
 .page__title {

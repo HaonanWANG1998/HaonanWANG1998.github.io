@@ -11,25 +11,21 @@ redirect_from:
 
 I am **Haonan Wang** (王浩楠), a Ph.D. candidate in Electrical Engineering at the
 [City University of Hong Kong](https://www.cityu.edu.hk/), advised by
-[Prof. Xianghao Yu](https://www.ee.cityu.edu.hk/~xianghyu/), and a Graduate
-Student Member of the IEEE. My research lies at the intersection of **wireless
-communications**, **signal processing**, and **mathematical optimization**,
+[Prof. Xianghao Yu](https://www.ee.cityu.edu.hk/~xianghyu/). My research lies at
+the intersection of **wireless communications**, **signal processing**, and
+**mathematical optimization**,
 where I build optimization frameworks and algorithms that unlock the potential
 of next-generation antenna architectures for 6G and beyond.
 {: .hw-intro}
 
-Before joining CityU, I received my M.Eng. (2023) and B.Eng. (2020) from
-[Xi'an Jiaotong University](https://en.xjtu.edu.cn/), where I worked with
-Prof. Ang Li. My current interests center on **reconfigurable MIMO** and
-**movable (fluid) antenna** systems, **symbol-level precoding**, and
-**submodular / manifold optimization**.
+If you are a researcher interested in these directions, you are warmly welcome
+to get in touch — I am always glad to discuss potential collaborations.
 
 <p class="hw-cta">
   <a class="hw-btn" href="/files/CV_Haonan_Wang.pdf" target="_blank" rel="noopener"><i class="fas fa-fw fa-download" aria-hidden="true"></i> Download CV</a>
   <a class="hw-btn hw-btn--ghost" href="https://scholar.google.com/citations?user=50DhybsAAAAJ&amp;hl=zh-CN&amp;oi=sra" target="_blank" rel="noopener"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar</a>
   <a class="hw-btn hw-btn--ghost" href="https://orcid.org/0000-0003-1587-8628" target="_blank" rel="noopener"><i class="ai ai-orcid" aria-hidden="true"></i> ORCID</a>
   <a class="hw-btn hw-btn--ghost" href="mailto:haonwang2-c@my.cityu.edu.hk"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a>
-  <a class="hw-btn hw-btn--ghost" href="https://github.com/HaonanWANG1998" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
 </p>
 
 ## News
@@ -46,9 +42,9 @@ Prof. Ang Li. My current interests center on **reconfigurable MIMO** and
 ## Education
 
 <ul class="hw-list">
-  <li><strong>Ph.D. in Electrical Engineering</strong><span class="year">2024 – 2028</span><br><span class="meta">City University of Hong Kong&nbsp;·&nbsp;Advisor: Prof. Xianghao Yu</span></li>
-  <li><strong>M.Eng. in Information &amp; Communications Engineering</strong><span class="year">2020 – 2023</span><br><span class="meta">Xi'an Jiaotong University&nbsp;·&nbsp;Advisor: Prof. Ang Li</span></li>
-  <li><strong>B.Eng. in Information Engineering</strong><span class="year">2016 – 2020</span><br><span class="meta">Xi'an Jiaotong University&nbsp;·&nbsp;Advisor: Dr. Li Sun</span></li>
+  <li><strong>Ph.D. in Electrical Engineering</strong><span class="year">2024 – 2028</span><br><span class="meta">City University of Hong Kong&nbsp;·&nbsp;Advisor: <a href="https://scholar.google.com/citations?user=PDiT3OsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Prof. Xianghao Yu</a></span></li>
+  <li><strong>M.Eng. in Information &amp; Communications Engineering</strong><span class="year">2020 – 2023</span><br><span class="meta">Xi'an Jiaotong University&nbsp;·&nbsp;Advisor: <a href="https://scholar.google.com/citations?user=5PIKekwAAAAJ&amp;hl=en" target="_blank" rel="noopener">Prof. Ang Li</a></span></li>
+  <li><strong>B.Eng. in Information Engineering</strong><span class="year">2016 – 2020</span><br><span class="meta">Xi'an Jiaotong University&nbsp;·&nbsp;Advisor: <a href="https://scholar.google.com/citations?user=FOlYbsoAAAAJ&amp;hl=en" target="_blank" rel="noopener">Dr. Li Sun</a></span></li>
 </ul>
 
 ## Professional Service
