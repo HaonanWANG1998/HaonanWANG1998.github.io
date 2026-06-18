@@ -1,0 +1,302 @@
+/* =========================================================
+   Haonan Wang — homepage styles (scliubit-inspired)
+   Scoped under .hw-home so it overrides _blog-custom.scss
+   only on the landing page and never touches blog posts.
+   ========================================================= */
+
+.hw-home {
+  --hw-accent: #2563eb;
+  --hw-accent-dark: #1d4ed8;
+  --hw-ink: #1f2933;
+  --hw-muted: #6b7280;
+  --hw-border: #e5e7eb;
+  --hw-bg-soft: #f7f8fa;
+  font-size: 1rem;
+}
+
+/* ---- Reset garish blog-custom styles inside the homepage ---- */
+.hw-home p {
+  text-align: left;
+  margin-bottom: 1em;
+  line-height: 1.75;
+}
+
+.hw-home h1,
+.hw-home h2,
+.hw-home h3 {
+  color: var(--hw-ink);
+  border-bottom: none;
+  padding-bottom: 0;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.hw-home h2 {
+  display: flex;
+  align-items: center;
+  font-size: 1.4em;
+  margin: 1.9em 0 0.7em;
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid var(--hw-border);
+  scroll-margin-top: 80px;
+}
+
+.hw-home h2::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 0.95em;
+  margin-right: 0.55em;
+  background: var(--hw-accent);
+  border-radius: 2px;
+}
+
+.hw-home h3 {
+  font-size: 1.12em;
+  color: #374151;
+  margin: 1.4em 0 0.5em;
+}
+
+.hw-home a {
+  color: var(--hw-accent);
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.hw-home a:hover {
+  color: var(--hw-accent-dark);
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+.hw-home hr {
+  border: none;
+  height: 1px;
+  background: var(--hw-border);
+  margin: 2.2em 0;
+}
+
+/* ---- Intro ---- */
+.hw-home .hw-intro {
+  font-size: 1.05em;
+}
+
+/* ---- Call-to-action row (CV + quick links) ---- */
+.hw-home .hw-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55em;
+  align-items: center;
+  margin: 1.3em 0 0.4em;
+}
+
+.hw-home .hw-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  padding: 0.5em 1.05em;
+  background: var(--hw-accent);
+  color: #fff !important;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95em;
+  text-decoration: none !important;
+  border: 1px solid var(--hw-accent);
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hw-home .hw-btn:hover {
+  background: var(--hw-accent-dark);
+  border-color: var(--hw-accent-dark);
+  color: #fff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+  text-decoration: none !important;
+}
+
+.hw-home .hw-btn--ghost {
+  background: #fff;
+  color: var(--hw-accent) !important;
+  border: 1px solid var(--hw-border);
+}
+
+.hw-home .hw-btn--ghost:hover {
+  background: var(--hw-bg-soft);
+  border-color: var(--hw-accent);
+  color: var(--hw-accent-dark) !important;
+  box-shadow: none;
+}
+
+/* ---- News feed ---- */
+.hw-home .hw-news {
+  list-style: none;
+  margin: 0.4em 0 0;
+  padding: 0;
+}
+
+.hw-home .hw-news li {
+  display: flex;
+  gap: 0.9em;
+  margin: 0;
+  padding: 0.55em 0;
+  border-bottom: 1px dashed var(--hw-border);
+  line-height: 1.6;
+}
+
+.hw-home .hw-news li:last-child {
+  border-bottom: none;
+}
+
+.hw-home .hw-news .date {
+  flex: 0 0 auto;
+  min-width: 4.7em;
+  padding-top: 0.05em;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  font-size: 0.9em;
+  color: var(--hw-accent);
+}
+
+.hw-home .hw-news .body {
+  color: #374151;
+}
+
+/* ---- Clean lists (education / services / awards) ---- */
+.hw-home .hw-list {
+  list-style: none;
+  margin: 0.4em 0 0;
+  padding: 0;
+}
+
+.hw-home .hw-list > li {
+  position: relative;
+  margin: 0;
+  padding: 0.5em 0 0.5em 1.1em;
+  border-bottom: 1px solid var(--hw-border);
+  line-height: 1.6;
+}
+
+.hw-home .hw-list > li:last-child {
+  border-bottom: none;
+}
+
+.hw-home .hw-list > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--hw-accent);
+}
+
+.hw-home .hw-list .meta {
+  color: var(--hw-muted);
+  font-size: 0.92em;
+}
+
+.hw-home .hw-list .year {
+  float: right;
+  margin-left: 0.8em;
+  color: var(--hw-muted);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.9em;
+}
+
+/* ---- Publications ---- */
+.hw-home .hw-pub {
+  margin: 0;
+  padding: 0.75em 0;
+  border-bottom: 1px solid var(--hw-border);
+}
+
+.hw-home .hw-pub:last-of-type {
+  border-bottom: none;
+}
+
+.hw-home .hw-pub .title {
+  font-weight: 600;
+  color: var(--hw-ink);
+}
+
+.hw-home .hw-pub .authors {
+  color: #374151;
+  font-size: 0.95em;
+}
+
+.hw-home .hw-pub .authors .me {
+  font-weight: 700;
+  color: var(--hw-ink);
+}
+
+.hw-home .hw-pub .venue {
+  color: var(--hw-muted);
+  font-style: italic;
+  font-size: 0.92em;
+}
+
+.hw-home .hw-links {
+  margin-top: 0.4em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  align-items: center;
+}
+
+.hw-home .hw-links a {
+  display: inline-block;
+  padding: 0.08em 0.6em;
+  font-size: 0.82em;
+  font-weight: 600;
+  color: var(--hw-accent) !important;
+  background: var(--hw-bg-soft);
+  border: 1px solid var(--hw-border);
+  border-radius: 6px;
+  text-decoration: none !important;
+}
+
+.hw-home .hw-links a:hover {
+  background: var(--hw-accent);
+  border-color: var(--hw-accent);
+  color: #fff !important;
+}
+
+.hw-home .hw-links img {
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  vertical-align: middle;
+}
+
+.hw-home .hw-status {
+  display: inline-block;
+  padding: 0.08em 0.6em;
+  font-size: 0.78em;
+  font-weight: 700;
+  color: #b45309;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 6px;
+}
+
+/* ---- "see more" trailing links ---- */
+.hw-home .hw-more {
+  margin-top: 0.9em;
+  font-size: 0.95em;
+}
+
+.hw-home .hw-more a {
+  font-weight: 600;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 600px) {
+  .hw-home .hw-news li {
+    flex-direction: column;
+    gap: 0.1em;
+  }
+  .hw-home .hw-news .date {
+    min-width: 0;
+  }
+}
