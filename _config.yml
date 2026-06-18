@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Oppen's Homepage"
+title                    : "Haonan Wang"
 title_separator          : "-"
-name                     : &name "Oppen"
-description              : &description "Master of Engineering - Personal Academic Portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+name                     : &name "Haonan Wang"
+description              : &description "Ph.D. Candidate at City University of Hong Kong working on reconfigurable MIMO, movable antennas, and optimization for wireless communications."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://haonanwang1998.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -24,13 +24,13 @@ repository               : "HaonanWANG1998/HaonanWANG1998.github.io"
 author:
   # Biographic information
   avatar           : "profile.jpg"
-  name             : "Oppen"
+  name             : "Haonan Wang"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. Candidate"
+  bio              : "Ph.D. Candidate in Electrical Engineering, City University of Hong Kong. Reconfigurable MIMO, movable antennas, and optimization for wireless communications."
   location         : "Hong Kong SAR, China"
-  employer         : 
-  uri              : # URL
-  email            : "haonanwang199808@gmail.com" 
+  employer         : "City University of Hong Kong"
+  uri              : "https://haonanwang1998.github.io"
+  email            : "haonwang2-c@my.cityu.edu.hk" 
 
   # Academic websites
   academia         : # URL
@@ -38,7 +38,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=50DhybsAAAAJ&hl=zh-CN&oi=sra"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/my-orcid?orcid=0000-0003-1587-8628"
+  orcid            : "https://orcid.org/0000-0003-1587-8628"
   semantic         : # URL
   pubmed           : # URL
   researchgate     : "https://www.researchgate.net/profile/Haonan-Wang-26?ev=hdr_xprf&_sg=TMhM3W8SezBZ0r-eVznc8AhPlKB1isUFgzGyjkUKgY9hbAu-j0Mz7WbFp7U_T_YAZAbWhc2qg79FszBT8voloDwn"
@@ -81,10 +81,10 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles'
+  books:
+    title: 'Book Chapters'
   conferences:
     title: 'Conference Papers'
 
