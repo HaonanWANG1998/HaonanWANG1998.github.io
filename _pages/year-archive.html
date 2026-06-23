@@ -1,13 +1,15 @@
 ---
 layout: archive
 permalink: /year-archive/
-title: "Blog posts"
+title: "Blog Posts"
 author_profile: true
 redirect_from:
   - /wordpress/blog-posts/
 ---
 
-<p>Total posts: {{ site.posts | size }}</p>
+<div class="hw-home">
+
+<p class="hw-note">Total posts: {{ site.posts | size }}</p>
 
 {% capture written_year %}'None'{% endcapture %}
 {% for post in site.posts %}
@@ -18,3 +20,5 @@ redirect_from:
   {% endif %}
   {% include archive-single.html %}
 {% endfor %}
+
+</div>

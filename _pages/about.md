@@ -11,7 +11,7 @@ redirect_from:
 
 I am **Haonan Wang**, a Ph.D. candidate in Electrical Engineering at the
 [City University of Hong Kong](https://www.cityu.edu.hk/), advised by
-[Prof. Xianghao Yu](https://www.ee.cityu.edu.hk/~xianghyu/). My research lies at
+Prof. Xianghao Yu. My research lies at
 the intersection of **wireless communications**, **signal processing**, and
 **mathematical optimization**,
 where I build optimization frameworks and algorithms that unlock the potential
@@ -79,6 +79,6 @@ to get in touch — I am always glad to discuss potential collaborations.
 
 <hr>
 
-Feel free to reach out at [haonwang2-c@my.cityu.edu.hk](mailto:haonwang2-c@my.cityu.edu.hk). You can also browse my online [CV](/cv/) for the complete details.
+Feel free to reach out at [haonwang2-c@my.cityu.edu.hk](mailto:haonwang2-c@my.cityu.edu.hk). You can also browse my online CV for the complete details.
 
 </div>

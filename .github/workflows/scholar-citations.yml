@@ -1,0 +1,49 @@
+name: Update Google Scholar citations
+
+# Keeps _data/scholar_citations.yml in sync with Google Scholar so the
+# Publications page shows live "Cited by" counts without any manual editing.
+
+on:
+  schedule:
+    # Run once a day at 03:30 UTC.
+    - cron: "30 3 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scholar-citations
+  cancel-in-progress: true
+
+jobs:
+  update-citations:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install scholarly==1.7.11 PyYAML==6.0.2
+
+      - name: Fetch citation counts from Google Scholar
+        env:
+          GOOGLE_SCHOLAR_ID: "50DhybsAAAAJ"
+        run: python markdown_generator/scholar_citations.py
+
+      - name: Commit updated citation data
+        run: |
+          if [[ -n "$(git status --porcelain _data/scholar_citations.yml)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add _data/scholar_citations.yml
+            git commit -m "chore: update Google Scholar citation counts"
+            git push
+          else
+            echo "No citation changes to commit."
+          fi

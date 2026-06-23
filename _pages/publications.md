@@ -15,11 +15,11 @@ author_profile: true
 
 {% for category in site.publication_category %}{% assign categoryKey = category[0] %}{% assign categoryValue = category[1] %}{% assign categoryPosts = site.publications | where: "category", categoryKey | sort: "date" | reverse %}{% if categoryPosts.size > 0 %}
 <h2>{{ categoryValue.title }}</h2>
-{% for post in categoryPosts %}<div class="hw-pub">
-  <div class="cite"><span class="pub-id">[{{ categoryValue.prefix }}{{ forloop.index }}]</span> {{ post.citation }}</div>{% if post.paperurl %}{% assign doi = post.paperurl | remove: "https://doi.org/" | remove: "http://dx.doi.org/" | remove: "https://dx.doi.org/" %}
-  <div class="hw-links">
-    <a href="{{ post.paperurl }}" target="_blank" rel="noopener">Paper</a>
-    <img src="https://api.juleskreuer.eu/citation-badge.php?doi={{ doi }}" alt="citations" loading="lazy">
+{% for post in categoryPosts %}{% assign pubSlug = post.title | slugify %}{% assign scholarPub = site.data.scholar_citations.publications[pubSlug] %}<div class="hw-pub">
+  <div class="cite"><span class="pub-id">[{{ categoryValue.prefix }}{{ forloop.index }}]</span> {{ post.citation }}</div>{% if post.paperurl or scholarPub %}
+  <div class="hw-links">{% if post.paperurl %}
+    <a href="{{ post.paperurl }}" target="_blank" rel="noopener">Paper</a>{% endif %}{% if scholarPub %}
+    <a class="hw-cite" href="{{ scholarPub.url | default: site.author.googlescholar }}" target="_blank" rel="noopener" title="Citations from Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i> Cited by {{ scholarPub.citations }}</a>{% endif %}
   </div>{% endif %}
 </div>
 {% endfor %}{% endif %}{% endfor %}
