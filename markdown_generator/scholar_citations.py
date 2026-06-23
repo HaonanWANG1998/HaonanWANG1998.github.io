@@ -16,6 +16,7 @@ template can look the entry up with ``{{ post.title | slugify }}``.
 import os
 import re
 import sys
+import time
 import datetime
 import unicodedata
 
@@ -24,6 +25,12 @@ import yaml
 # Google Scholar user id. Defaults to this site's owner but can be overridden via
 # the GOOGLE_SCHOLAR_ID environment variable (set in the workflow).
 SCHOLAR_ID = os.environ.get("GOOGLE_SCHOLAR_ID", "50DhybsAAAAJ")
+
+# Google Scholar aggressively rate-limits/blocks datacenter IPs (such as the
+# ones used by GitHub Actions runners), so transient "Cannot Fetch from Google
+# Scholar" errors are expected. Retry a few times before giving up.
+FETCH_ATTEMPTS = int(os.environ.get("SCHOLAR_FETCH_ATTEMPTS", "3"))
+FETCH_RETRY_DELAY = float(os.environ.get("SCHOLAR_FETCH_RETRY_DELAY", "10"))
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_PATH = os.path.join(REPO_ROOT, "_data", "scholar_citations.yml")
@@ -81,11 +88,30 @@ def fetch_publications(scholar_id):
 
 
 def main():
-    try:
-        total, publications = fetch_publications(SCHOLAR_ID)
-    except Exception as exc:  # noqa: BLE001 - surface any scraping failure
-        sys.stderr.write(f"Failed to fetch Google Scholar data: {exc}\n")
-        return 1
+    last_exc = None
+    for attempt in range(1, FETCH_ATTEMPTS + 1):
+        try:
+            total, publications = fetch_publications(SCHOLAR_ID)
+            break
+        except Exception as exc:  # noqa: BLE001 - surface any scraping failure
+            last_exc = exc
+            sys.stderr.write(
+                f"Attempt {attempt}/{FETCH_ATTEMPTS} to fetch Google Scholar "
+                f"data failed: {exc}\n"
+            )
+            if attempt < FETCH_ATTEMPTS:
+                time.sleep(FETCH_RETRY_DELAY)
+    else:
+        # Google Scholar regularly blocks automated/datacenter requests, which
+        # is outside our control. Treat this as a soft failure: leave any
+        # existing citation data untouched and exit successfully so the
+        # scheduled workflow does not report a failure on every blocked run.
+        sys.stderr.write(
+            "Could not fetch Google Scholar data after "
+            f"{FETCH_ATTEMPTS} attempt(s): {last_exc}. "
+            "Keeping existing citation data unchanged.\n"
+        )
+        return 0
 
     data = {
         "last_updated": datetime.date.today().isoformat(),
