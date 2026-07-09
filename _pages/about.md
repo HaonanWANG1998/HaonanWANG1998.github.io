@@ -32,8 +32,6 @@ to get in touch — I am always glad to discuss potential collaborations.
 
 <ul class="hw-news">
   <li><span class="date">2026.06</span><span class="body">Serving as a <b>Session Chair</b> ("Novel Antenna Systems&nbsp;I: Movable &amp; Fluid Antennas") and <b>TPC Member</b> at <b>IEEE ICC 2026</b>, Glasgow, UK.</span></li>
-  <li><span class="date">2026.01</span><span class="body">Our paper "Exploiting Submodularity for Efficient Discrete Movable Antenna Placement" was accepted to <b>IEEE ICC 2026</b>.</span></li>
-  <li><span class="date">2025.08</span><span class="body">Submitted a manuscript on low-complexity, robust <b>discrete movable-antenna positioning</b> to <b>IEEE JSAC</b>.</span></li>
   <li><span class="date">2025.02</span><span class="body">Named an <b>Exemplary Reviewer</b> of <i>IEEE Communications Letters</i> for 2025.</span></li>
   <li><span class="date">2024.09</span><span class="body">Joined <b>City University of Hong Kong</b> as a Ph.D. candidate, advised by Prof. Xianghao Yu.</span></li>
   <li><span class="date">2023.06</span><span class="body">Awarded the <b>China Scholarship Council (CSC) Full Ph.D. Scholarship</b>.</span></li>

@@ -40,12 +40,6 @@ Matrix Analysis, Reinforcement Learning.
 
 ## Research Experience
 
-* **Submodular Optimization for Discrete Movable Antenna Positioning**, City University of Hong Kong (Feb 2024 -- Jun 2025)
-  * Advisor: Prof. Xianghao Yu
-  * Proved that discrete movable-antenna (MA) positioning exhibits a monotone submodular property subject to a 2-system constraint.
-  * Proposed the DCSPS algorithm with a theoretical 1/3-approximation guarantee relative to the optimum.
-  * Extended the framework to imperfect-CSI scenarios with a robust DCSPS scheme.
-
 * **Achievable Rate Maximization Pattern Design for Reconfigurable MIMO**, Xi'an Jiaotong University (Jul 2020 -- Jun 2023)
   * Advisor: Prof. Ang Li
   * Built a matrix-representation channel model for the pattern-reconfigurable MIMO system.
