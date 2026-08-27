@@ -3,6 +3,11 @@ title: "Joint Symbol-Level Precoding and Reconfigurable Pattern Design"
 excerpt: "Jointly optimizing symbol-level precoding and reconfigurable radiation patterns for downlink reconfigurable antenna systems."
 collection: portfolio
 date: 2022-03-01
+teaser: /images/research/symbol-level-precoding.png
+tags:
+  - Symbol-Level Precoding
+  - Reconfigurable Antenna
+  - Joint Design
 ---
 
 **Xi'an Jiaotong University** &middot; Advisor: Prof. Ang Li &middot; 2022 -- 2023

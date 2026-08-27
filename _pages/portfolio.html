@@ -7,7 +7,24 @@ author_profile: true
 
 {% include base_path %}
 
-<div class="hw-home">
-{% assign sortedPortfolio = site.portfolio | sort: "date" | reverse %}{% for post in sortedPortfolio %}{% include archive-single.html %}{% endfor %}
+<div class="hw-home hw-research-list">
+{% assign sortedPortfolio = site.portfolio | sort: "date" | reverse %}
+{% for post in sortedPortfolio %}
+<a class="hw-research-item" href="{{ base_path }}{{ post.url }}" aria-label="Read more about {{ post.title | escape }}">
+<span class="hw-research-media">
+<img src="{{ post.teaser | default: '/images/500x300.png' | prepend: base_path }}" alt="" loading="lazy">
+</span>
+<span class="hw-research-content">
+<span class="hw-research-title">{{ post.title }}</span>
+{% if post.excerpt %}
+<span class="hw-research-excerpt">{{ post.excerpt | markdownify | strip_html | strip_newlines }}</span>
+{% endif %}
+{% if post.tags %}
+<span class="hw-research-tags" aria-label="Research topics">
+{% for tag in post.tags %}<span>{{ tag }}</span>{% endfor %}
+</span>
+{% endif %}
+</span>
+</a>
+{% endfor %}
 </div>
-

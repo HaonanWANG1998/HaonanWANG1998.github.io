@@ -3,6 +3,11 @@ title: "Achievable Rate Maximization Pattern Design for Reconfigurable MIMO"
 excerpt: "A matrix-representation channel model and manifold-optimization framework for radiation-pattern design in reconfigurable MIMO arrays."
 collection: portfolio
 date: 2020-07-01
+teaser: /images/research/reconfigurable-mimo.png
+tags:
+  - Reconfigurable MIMO
+  - Pattern Design
+  - Manifold Optimization
 ---
 
 **Xi'an Jiaotong University** &middot; Advisor: Prof. Ang Li &middot; 2020 -- 2023
