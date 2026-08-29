@@ -31,7 +31,7 @@ to get in touch — I am always glad to discuss potential collaborations.
 ## News
 
 <ul class="hw-news">
-  <li><span class="date">2026.06</span><span class="body">Serving as a <b>Session Chair</b> ("Novel Antenna Systems&nbsp;I: Movable &amp; Fluid Antennas") and <b>TPC Member</b> at <b>IEEE ICC 2026</b>, Glasgow, UK.</span></li>
+  <li><span class="date">2026.05</span><span class="body">Served as a <b>Session Chair</b> for "Novel Antenna Systems&nbsp;I: Movable &amp; Fluid Antennas" and as a <b>TPC Member</b> at <b>IEEE ICC 2026</b> in Glasgow, UK.</span></li>
   <li><span class="date">2025.02</span><span class="body">Named an <b>Exemplary Reviewer</b> of <i>IEEE Communications Letters</i> for 2025.</span></li>
   <li><span class="date">2024.09</span><span class="body">Joined <b>City University of Hong Kong</b> as a Ph.D. candidate, advised by Prof. Xianghao Yu.</span></li>
   <li><span class="date">2023.06</span><span class="body">Awarded the <b>China Scholarship Council (CSC) Full Ph.D. Scholarship</b>.</span></li>

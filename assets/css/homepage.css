@@ -1,12 +1,12 @@
 /* =========================================================
    Haonan Wang — site styles
-   Global typography (Optima-led, matches ee.cityu.edu.hk/~alexyu)
+   Global typography (Times New Roman with CJK serif fallbacks)
    plus the clean .hw-home content style reused across pages.
    ========================================================= */
 
 /* ---- Global font (site-wide) ---- */
 :root {
-  --hw-font: Optima, "Optima Nova", "Helvetica Neue", Candara, Calibri, "Segoe UI", Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Droid Sans", Arial, sans-serif;
+  --hw-font: "Times New Roman", Times, "Songti SC", SimSun, "Noto Serif CJK SC", serif;
 }
 
 body,
