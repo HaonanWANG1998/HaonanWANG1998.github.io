@@ -1,0 +1,15 @@
+---
+layout: archive
+title: "News"
+permalink: /news/
+author_profile: true
+---
+
+<div class="hw-home hw-news-archive">
+  {% assign allNews = site.data.news | sort: 'date' | reverse %}
+  <ul class="hw-news">
+    {% for item in allNews %}
+    <li><time class="date" datetime="{{ item.date }}">{{ item.label }}</time><span class="body">{{ item.content }}</span></li>
+    {% endfor %}
+  </ul>
+</div>

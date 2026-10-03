@@ -1,22 +1,22 @@
 {% include base_path %}
 
-<div class="masthead">
+<div class="masthead hw-masthead">
   <div class="masthead__inner-wrap">
+    {% if page.editorial_home %}<h1 class="hw-wordmark">{% else %}<div class="hw-wordmark">{% endif %}<a href="{{ base_path }}/">{{ site.name }}{% if site.author.name_cn %}<span class="hw-name-cn">{{ site.author.name_cn }}</span>{% endif %}</a>{% if page.editorial_home %}</h1>{% else %}</div>{% endif %}
+    <p class="hw-masthead-deck">Wireless Communications &middot; Signal Processing &middot; Optimization</p>
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+      <nav id="site-navigation" class="greedy-nav" aria-label="Main navigation" tabindex="0">
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">Homepage</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a></li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
               {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a></li>
           {% endfor %}
         </ul>
-        <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>

@@ -72,6 +72,7 @@ Matrix Analysis, Reinforcement Learning.
 
 ## Professional Service
 
+* **TPC Member**, *Wireless Communications Symposium*, IEEE ICC 2027
 * **Session Chair**, *Novel Antenna Systems I: Movable & Fluid Antennas*, IEEE ICC 2026, Glasgow, UK
 * **TPC Member**, *Wireless Communications*, IEEE ICC 2026, Glasgow, UK
 * **Peer Reviewer**: IEEE JSAC, IEEE TCOM, IEEE TMC, IEEE TSP, IEEE Communications Letters, IEEE OJ-SP, EURASIP JWCN; IEEE ICC, GLOBECOM, ICCC, ISWCS, WCNC
