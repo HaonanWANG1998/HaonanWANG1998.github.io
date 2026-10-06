@@ -15,13 +15,12 @@ redirect_from:
 <div class="hw-home hw-editorial-home">
   <div class="hw-front-grid">
     <div class="hw-main-column">
-      <section class="hw-profile" aria-labelledby="research-introduction">
+      <section class="hw-profile" aria-label="About Haonan Wang">
         <div class="hw-profile-identity">
           <img src="{{ '/images/' | append: site.author.avatar | relative_url }}" alt="Haonan Wang's avatar" width="60" height="60">
           <p>Ph.D. Candidate in Electrical Engineering<br><a href="https://www.cityu.edu.hk/">City University of Hong Kong</a></p>
         </div>
-        <h2 id="research-introduction" class="hw-profile-title">Wireless communications,<br>signal processing &amp; optimization.</h2>
-        <p class="hw-intro">I develop optimization frameworks for reconfigurable MIMO, movable and fluid antennas, and next-generation wireless systems. My advisor is Prof. Xianghao Yu.</p>
+        <p class="hw-intro">I develop optimization frameworks for reconfigurable MIMO, movable and fluid antennas, and next-generation wireless systems. My advisor is <a href="https://www.ee.cityu.edu.hk/~alexyu/" target="_blank" rel="noopener">Prof. Xianghao Yu</a>.</p>
         <p>I welcome discussions and collaborations on these research directions.</p>
         <div class="hw-cta">
           <a class="hw-btn" href="{{ '/files/CV_Haonan_Wang.pdf' | relative_url }}" target="_blank" rel="noopener"><i class="fas fa-fw fa-download" aria-hidden="true"></i> Download CV</a>
@@ -90,9 +89,9 @@ redirect_from:
     <section aria-labelledby="home-education">
       <h2 id="home-education">Education</h2>
       <ul class="hw-list">
-        <li><strong>Ph.D. in Electrical Engineering</strong><span class="year">2024 &ndash; 2028</span><span class="meta">City University of Hong Kong<br>Advisor: <a href="https://scholar.google.com/citations?user=PDiT3OsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Prof. Xianghao Yu</a></span></li>
-        <li><strong>M.Eng. in Information &amp; Communications Engineering</strong><span class="year">2020 &ndash; 2023</span><span class="meta">Xi'an Jiaotong University<br>Advisor: <a href="https://scholar.google.com/citations?user=5PIKekwAAAAJ&amp;hl=en" target="_blank" rel="noopener">Prof. Ang Li</a></span></li>
-        <li><strong>B.Eng. in Information Engineering</strong><span class="year">2016 &ndash; 2020</span><span class="meta">Xi'an Jiaotong University<br>Advisor: <a href="https://scholar.google.com/citations?user=FOlYbsoAAAAJ&amp;hl=en" target="_blank" rel="noopener">Dr. Li Sun</a></span></li>
+        <li><strong>Ph.D. in Electrical Engineering</strong><span class="year">2024 &ndash; 2028</span><span class="meta">City University of Hong Kong<br>Advisor: <a href="https://www.ee.cityu.edu.hk/~alexyu/" target="_blank" rel="noopener">Prof. Xianghao Yu</a></span></li>
+        <li><strong>M.Eng. in Information &amp; Communications Engineering</strong><span class="year">2020 &ndash; 2023</span><span class="meta">Xi'an Jiaotong University<br>Advisor: <a href="https://faculty.xjtu.edu.cn/ang-li/zh_CN/index.htm" target="_blank" rel="noopener">Prof. Ang Li</a></span></li>
+        <li><strong>B.Eng. in Information Engineering</strong><span class="year">2016 &ndash; 2020</span><span class="meta">Xi'an Jiaotong University<br>Advisor: <a href="https://dice.xjtu.edu.cn/info/1258/1441.htm" target="_blank" rel="noopener">Dr. Li Sun</a></span></li>
       </ul>
     </section>
 

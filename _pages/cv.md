@@ -16,11 +16,13 @@ redirect_from:
 ## Education
 
 * **Ph.D. in Electrical Engineering**, City University of Hong Kong, 2024 -- 2028 (expected)
-  * Advisor: Prof. Xianghao Yu
+  * Advisor: [Prof. Xianghao Yu](https://www.ee.cityu.edu.hk/~alexyu/)
 * **M.Eng. in Information and Communications Engineering**, Xi'an Jiaotong University, 2020 -- 2023
-  * Advisor: Prof. Ang Li &nbsp;|&nbsp; GPA: 3.83/4.3
+  * Advisor: [Prof. Ang Li](https://faculty.xjtu.edu.cn/ang-li/zh_CN/index.htm)
+  * GPA: 3.83/4.3
 * **B.Eng. in Information Engineering**, Xi'an Jiaotong University, 2016 -- 2020
-  * Advisor: Dr. Li Sun &nbsp;|&nbsp; GPA: 3.76/4.3
+  * Advisor: [Dr. Li Sun](https://dice.xjtu.edu.cn/info/1258/1441.htm)
+  * GPA: 3.76/4.3
 
 ## Research Interests
 
@@ -41,13 +43,13 @@ Matrix Analysis, Reinforcement Learning.
 ## Research Experience
 
 * **Achievable Rate Maximization Pattern Design for Reconfigurable MIMO**, Xi'an Jiaotong University (Jul 2020 -- Jun 2023)
-  * Advisor: Prof. Ang Li
+  * Advisor: [Prof. Ang Li](https://faculty.xjtu.edu.cn/ang-li/zh_CN/index.htm)
   * Built a matrix-representation channel model for the pattern-reconfigurable MIMO system.
   * Revealed the physical mechanism of the pattern effect on the wireless channel.
   * Proposed a sequential optimization framework for pattern design based on manifold optimization.
 
 * **Joint Design of Symbol-Level Precoding and Reconfigurable Pattern**, Xi'an Jiaotong University (Mar 2022 -- Jun 2023)
-  * Advisor: Prof. Ang Li
+  * Advisor: [Prof. Ang Li](https://faculty.xjtu.edu.cn/ang-li/zh_CN/index.htm)
   * Formulated the joint design of symbol-level precoding and reconfigurable radiation pattern.
   * Proposed an alternating-optimization scheme to design the precoder and pattern jointly.
   * Developed a low-complexity scheme for practical applications and discussed antenna-design issues.

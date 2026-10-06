@@ -2,7 +2,7 @@
 
 <div class="masthead hw-masthead">
   <div class="masthead__inner-wrap">
-    {% if page.editorial_home %}<h1 class="hw-wordmark">{% else %}<div class="hw-wordmark">{% endif %}<a href="{{ base_path }}/">{{ site.name }}{% if site.author.name_cn %}<span class="hw-name-cn">{{ site.author.name_cn }}</span>{% endif %}</a>{% if page.editorial_home %}</h1>{% else %}</div>{% endif %}
+    {% if page.editorial_home %}<h1 class="hw-wordmark">{% else %}<div class="hw-wordmark">{% endif %}<a href="{{ base_path }}/">{{ site.name }}{% if site.author.name_cn %}<span class="hw-name-cn" lang="zh-Hans">{{ site.author.name_cn }}</span>{% endif %}</a>{% if page.editorial_home %}</h1>{% else %}</div>{% endif %}
     <p class="hw-masthead-deck">Wireless Communications &middot; Signal Processing &middot; Optimization</p>
     <div class="masthead__menu">
       <nav id="site-navigation" class="greedy-nav" aria-label="Main navigation" tabindex="0">

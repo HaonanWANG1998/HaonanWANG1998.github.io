@@ -24,6 +24,20 @@ See more info at https://academicpages.github.io/
 1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
 1. Run `bundle exec jekyll liveserve` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
 
+## Personal site presentation
+
+- [Shared site styles](assets/css/homepage.css) justify body paragraphs, list
+  content, news, research summaries, and publication citations on desktop and
+  mobile. Final lines are not stretched; headings and navigation retain their
+  existing alignment.
+- Chinese text uses Noto Serif SC with local CJK serif fallbacks. The existing
+  Latin display, body, and UI fonts are unchanged. Web fonts are loaded in the
+  [custom head](./_includes/head/custom.html).
+- In the [CV](./_pages/cv.md), keep advisor links and GPA details as ordinary
+  nested list items, not pipe-separated rows, which Kramdown can turn into tables.
+- The [home introduction](./_pages/about.md) keeps research fields in the masthead
+  rather than repeating them as a large heading beneath the avatar.
+
 # Changelog -- bugfixes and enhancements
 
 There is one logistical issue with a ready-to-fork template theme like academic pages that makes it a little tricky to get bug fixes and updates to the core theme. If you fork this repository, customize it, then pull again, you'll probably get merge conflicts. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch. 
